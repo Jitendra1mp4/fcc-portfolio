@@ -78,8 +78,9 @@ body {
 .projects {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 31em));
+  grid-template-columns: repeat(auto-fill, minmax(270px, 23em));
   gap: 3rem;
+  margin-top: 1.6rem;
   padding-bottom: 8rem;
   background: var(--color-work-primary);
 }
@@ -102,12 +103,11 @@ body {
 }
 .project-card {
   display: grid;
-  border: .5px solid var(--color-primary-dark);
   background-color:var(--color-primary-dark);
 }
 .project-card h3 {
   height: 2.1em;
-  font-size: 1.6em;
+  font-size: 1.4em;
   padding-top: 0.1em;
   color: var(--color-primary);
   text-align: center;
@@ -115,7 +115,7 @@ body {
 
 img {
   width: 100%;
-  height: 23rem;
+  height: 18em;
   object-fit: cover;
 }
 
@@ -154,6 +154,7 @@ a:hover {
   transform: scale(1.01);
   transition-duration: 100ms;
 }
+
 /* for tablets */
 @media only screen and (max-width: 650px) {
   #navbar {
