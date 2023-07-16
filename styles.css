@@ -154,6 +154,16 @@ a:hover {
   transform: scale(1.01);
   transition-duration: 100ms;
 }
+/* for laptop */
+@media screen and (max-width :900px ) {
+  .projects{
+    grid-template-columns: repeat(auto-fill, 320px);
+  }
+  .project-card h3 {
+    height: 2em;
+    font-size: 1em;
+  }
+}
 
 /* for tablets */
 @media only screen and (max-width: 650px) {
