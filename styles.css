@@ -30,9 +30,9 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  color: var(--color-work-primary);
 }
-.brand {
+.brand a{
+  color: var(--color-work-primary);
   font-size: larger;
   font-weight: bold;
   letter-spacing: 0.5px;
