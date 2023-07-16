@@ -152,3 +152,60 @@ a:hover {
   transform: scale(1.01);
   transition-duration: 100ms;
 }
+/* for tablets */
+@media only screen and (max-width: 650px) {
+  #navbar {
+    font-size: large;
+    flex-direction: column;
+    padding: 0.5em;
+  }
+
+  #welcome-section .hero-name {
+    margin-top: -10px;
+    display: block;
+  }
+
+  .project-card h3 {
+    height: 2em;
+    font-size: 1.4em;
+  }
+}
+/* for smartphones */
+@media only screen and (max-width: 400px) {
+  #navbar {
+    font-size: medium;
+    padding: 1em;
+  }
+  #welcome-section {
+    font-size: x-large;
+  }
+  .projects {
+    row-gap: 2rem;
+  }
+  .projects header h2 {
+    font-size: x-large;
+  }
+  .project-card {
+    width : 90vw;
+    margin: auto;
+    border-radius: .5rem;
+  }
+  
+   .project-card  img {
+    height: 18em;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+  }
+
+  .project-card h3 {
+    height: 2.3em;
+    font-size: 1em;
+  }
+
+  footer .brand,
+  footer li a {
+    display: block;
+    margin-bottom: 0.4rem;
+    text-align: center;
+  }
+}
