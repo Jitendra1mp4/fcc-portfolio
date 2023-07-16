@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 :root {
   --color-primary: rgb(221, 225, 255);
-  --color-primary-dark: rgb(0, 16, 66);
+  --color-primary-dark: rgb(0, 18, 73);
+  --color-work-primary : rgb(219, 239, 255);
 }
 * {
   margin: 0;
@@ -24,18 +25,19 @@ body {
   padding: 20px max(5%, 10px);
   justify-content: space-between;
   align-items: center;
-
+  
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
+  color: var(--color-work-primary);
 }
 .brand {
   font-size: larger;
   font-weight: bold;
   letter-spacing: 0.5px;
-  color: var(--color-primary);
 }
+
 #navbar ul {
   list-style-type: none;
 }
@@ -61,7 +63,7 @@ body {
   align-items: center;
   position: relative;
   top: 2rem;
-  color: rgb(25, 1, 54);
+  color: var(--color-primary-dark);
 }
 
 #welcome-section h1 {
@@ -79,7 +81,7 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(270px, 31em));
   gap: 3rem;
   padding-bottom: 8rem;
-  background: rgb(129, 168, 226);
+  background: var(--color-work-primary);
 }
 .projects header {
   grid-column: 1/-1;
@@ -94,14 +96,14 @@ body {
 }
 
 .projects header hr {
-  border: 1px solid;
+  border: .5px solid rgb(148, 148, 177);
   width: 80%;
   margin: auto;
 }
 .project-card {
   display: grid;
-  border: 1px solid var(--color-primary-dark);
-  background-color: rgb(22, 50, 80);
+  border: .5px solid var(--color-primary-dark);
+  background-color:var(--color-primary-dark);
 }
 .project-card h3 {
   height: 2.1em;
